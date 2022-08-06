@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 
+// check if the comparison is valid
 bool check(vector<int> &perm, vector<char> &a){
-    // if the comparison doesn't match, return false
     for(int i = 0; i < a.size(); i++){
         if(a[i] == '<' && perm[i] > perm[i + 1]){
             return false;
