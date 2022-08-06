@@ -3,7 +3,8 @@
 #include <algorithm>
 using namespace std;
 
-int calc(vector<int> &a, vector<int> &b){ // calculator
+// calculation function
+int calc(vector<int> &a, vector<int> &b){
     int n = a.size();
     int ans = a[0];
     for(int i = 1; i < n; i++){
