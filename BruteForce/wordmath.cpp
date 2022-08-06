@@ -12,11 +12,13 @@ int calc(vector<string> &a, vector<char> &letters, vector<int> &d){
     for(int i = 0; i < m; i++){
         alpha[letters[i]] = d[i]; // the value of i-th alphbet in a word
     }
+
+    /* calculate the value of each word shifting to match the place value */
     for(string s : a){
         int now = 0;
         for (char x : s){
             now = now * 10 + alpha[x];
-        } // calculate the value of each word shifting to match the place value
+        }
         sum += now;
     }
     return sum;
