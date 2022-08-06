@@ -19,7 +19,7 @@ int main(){
 
     int ans = 2147483647;
 
-    /* divide into two teams and sum up the synergy of each team */
+    /* divide into two teams and sum up all the synergy of each team */
     do{
         vector<int> first, second;
         for(int i = 0; i < n; i++){
